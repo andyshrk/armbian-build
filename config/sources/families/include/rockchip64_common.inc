@@ -310,6 +310,11 @@ family_tweaks() {
 
 	fi
 
+
+	if [[ $BOARD == eaidk-610 ]]; then
+		cp -R $SRC/packages/blobs/eaidk/firmware/* $SDCARD/lib/firmware/brcm/
+	fi
+
 }
 
 family_tweaks_bsp() {
