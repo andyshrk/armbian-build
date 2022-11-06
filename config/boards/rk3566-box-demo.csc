@@ -1,0 +1,12 @@
+# Rockchip RK3566 BoX Demo with 4GB DDR/HDMI/USB3/WIFI/GMAC
+BOARD_NAME="RK3566 BOX DEMO"
+BOOT_SOC="rk3568"
+BOARDFAMILY="rk35xx"
+BOOTCONFIG="rk3568_defconfig"
+KERNEL_TARGET="current,edge"
+FULL_DESKTOP="yes"
+BOOT_LOGO="desktop"
+BOOT_FDT_FILE="rockchip/rk3566-box-demo.dtb"
+BOOT_SCENARIO="spl-blobs"
+WIREGUARD="no"
+IMAGE_PARTITION_TABLE="gpt"
