@@ -1,0 +1,11 @@
+# Rockchip RK3568 quad core 1-8GB SoC GBe eMMC USB3
+BOARD_NAME="Lubancat2"
+BOARDFAMILY="rk35xx"
+BOOTCONFIG="rock-3a-rk3568_defconfig"
+KERNEL_TARGET="legacy,edge"
+FULL_DESKTOP="yes"
+BOOT_LOGO="desktop"
+BOOT_FDT_FILE="rockchip/rk3568-lubancat2.dtb"
+BOOT_SCENARIO="spl-blobs"
+WIREGUARD="no"
+IMAGE_PARTITION_TABLE="gpt"
