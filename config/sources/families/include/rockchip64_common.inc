@@ -319,6 +319,11 @@ family_tweaks() {
 		cp -R $SRC/packages/blobs/eaidk/firmware/* $SDCARD/lib/firmware/brcm/
 	fi
 
+	if [[ $BOARD == coolpi-4b ]]; then
+		cp -R $SRC/packages/blobs/coolpi/firmware/* $SDCARD/lib/firmware/
+	fi
+
+
 }
 
 family_tweaks_bsp() {
