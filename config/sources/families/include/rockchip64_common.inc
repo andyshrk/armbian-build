@@ -314,6 +314,10 @@ family_tweaks() {
 		cp -R $SRC/packages/blobs/eaidk/firmware/* $SDCARD/lib/firmware/brcm/
 	fi
 
+	if [[ $BOARD == lubancat2 ]]; then
+		cp -R $SRC/packages/blobs/lubancat/rtw88 $SDCARD/lib/firmware/
+		cp -R $SRC/packages/blobs/lubancat/rtl_bt $SDCARD/lib/firmware/
+	fi
 }
 
 family_tweaks_bsp() {
