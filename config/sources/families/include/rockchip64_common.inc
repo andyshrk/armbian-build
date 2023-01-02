@@ -365,6 +365,12 @@ family_tweaks() {
 		cp -R $SRC/packages/blobs/coolpi/firmware/* $SDCARD/lib/firmware/
 	fi
 
+	if [[ $BOARD == lubancat2 ]]; then
+		cp -R $SRC/packages/blobs/lubancat/rtw88 $SDCARD/lib/firmware/
+		cp -R $SRC/packages/blobs/lubancat/rtl_bt $SDCARD/lib/firmware/
+	fi
+
+
 
 }
 
