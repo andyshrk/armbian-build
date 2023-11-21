@@ -322,6 +322,9 @@ family_tweaks() {
 	if [[ $BOARD == coolpi-4b ]]; then
 		cp -R $SRC/packages/blobs/coolpi/firmware/* $SDCARD/lib/firmware/
 	fi
+	if [[ $BOARD == coolpi-cm5 ]]; then
+		cp -R $SRC/cache/sources/linux-firmware-git/rtw89 $SDCARD/lib/firmware/
+	fi
 
 
 }
