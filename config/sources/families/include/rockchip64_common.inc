@@ -319,6 +319,10 @@ family_tweaks() {
 		cp -R $SRC/packages/blobs/eaidk/firmware/* $SDCARD/lib/firmware/brcm/
 	fi
 
+	if [[ $BOOT_SOC == rk3588 ]]; then
+		cp -R $SRC/packages/blobs/arm $SDCARD/lib/firmware/
+	fi
+
 	if [[ $BOARD == coolpi-4b ]]; then
 		cp -R $SRC/packages/blobs/coolpi/firmware/* $SDCARD/lib/firmware/
 	fi
